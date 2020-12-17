@@ -1,15 +1,20 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <Menu />
+  <SectionTitle name="RELEASES" />
+  <AlbumList />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Menu from './components/Menu'
+import SectionTitle from './components/SectionTitle'
+import AlbumList from './components/AlbumList'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Menu,
+    SectionTitle,
+    AlbumList,
   }
 }
 </script>
@@ -21,6 +26,5 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
