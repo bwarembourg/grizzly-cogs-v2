@@ -8,7 +8,7 @@ exports.handler = async function(event, context) {
   return client.query(
     q.Map(
       q.Paginate(
-        q.Match(q.Index('musics'))
+        q.Match(q.Index('albums'))
       ),
       q.Lambda("X", q.Get(q.Var("X")))
     )
