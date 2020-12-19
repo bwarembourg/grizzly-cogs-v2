@@ -6,7 +6,7 @@
     <MenuItem item-title="Releases" link="#releases" />
     <MenuItem item-title="Game soundtracks" link="#game-soundtracks"/>
     <MenuItem item-title="Listen" link="http://grizzlycogs.bandcamp.com" />
-    <MenuItem item-title="Shows" />
+    <MenuItem item-title="Shows" link="#shows" />
     <MenuItem item-title="Run! Run! Jump! Punch!" />
     <MenuItem item-title="Contact / About" />
   </nav>

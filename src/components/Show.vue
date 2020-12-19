@@ -7,10 +7,11 @@
       </div>
       <div class="w-5/6 text-left px-8 py-1">
         <p>
-          <img v-if="showData.country == 'Poland'" src="img/flag-pl.png" class="w-8 inline p-1" >
-          <img v-if="showData.country == 'France'" src="img/flag-fr.png" class="w-8 inline p-1" >
           {{ showData.city }}, {{ showData.country }}
-          <span class="text-sm">({{ showData.place}})</span>
+          <br />
+          <img v-if="showData.country == 'Poland'" src="img/flag-pl.png" class="w-6 inline p-1" >
+          <img v-if="showData.country == 'France'" src="img/flag-fr.png" class="w-6 inline p-1" >
+          <span class="text-xs text-green-400">{{ showData.place}}</span>
         </p>
         
       </div>
