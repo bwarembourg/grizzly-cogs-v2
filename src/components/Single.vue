@@ -11,7 +11,9 @@
         </div>
       </transition>
     </div>
-    <ReleasePage v-show="show" :release="singleData" type="single" />
+    <transition name="fade">
+      <ReleasePage v-show="show" :release="singleData" type="single" />
+    </transition>
     <!-- CLOSE ICON -->
     <div v-if="show" class="fixed top-10 right-10 cursor-pointer z-50">
       <i v-on:click="show = false" class="fas fa-times text-white text-5xl"></i>

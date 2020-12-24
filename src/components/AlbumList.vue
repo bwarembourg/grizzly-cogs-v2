@@ -25,19 +25,4 @@
           })
     }
   }
-
-  // let infos = ''
-  // infos = 'a'
-  // axios
-  //   .get('/.netlify/functions/music')
-  //   .then(response => {
-  //     infos = response.data
-  // })
 </script>
-<style scoped>
-  .loader {
-    -webkit-animation:spin 4s linear infinite;
-    -moz-animation:spin 4s linear infinite;
-    animation:spin 4s linear infinite;
-  }
-</style>

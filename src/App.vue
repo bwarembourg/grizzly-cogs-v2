@@ -1,15 +1,19 @@
 <template>
   <Menu />
   <Hello />
+  <SectionTitle id="game-soundtracks" name="GAME SOUNDTRACKS" />
+  <GameList />
   <SectionTitle id="releases" name="RELEASES" />
   <SubTitle name="ALBUMS" />
   <AlbumList />
   <SubTitle name="SINGLES & EPS" />
   <SingleList />
-  <SectionTitle id="game-soundtracks" name="GAME SOUNDTRACKS" />
-  <GameList />
   <SectionTitle id="shows" name="PAST SHOWS" />
   <ShowList />
+  <SectionTitle id="rrjp" name="RUN! RUN! JUMP! PUNCH!" />
+  <RunRunJumpPunch />
+  <SectionTitle id="contact" name="CONTACT / ABOUT" />
+  <Contact />
 </template>
 
 <script>
@@ -21,6 +25,8 @@ import SingleList from './components/SingleList'
 import Hello from './components/Hello'
 import GameList from './components/GameList'
 import ShowList from './components/ShowList'
+import RunRunJumpPunch from './components/RunRunJumpPunch'
+import Contact from './components/Contact'
 
 export default {
   name: 'App',
@@ -33,6 +39,8 @@ export default {
     Hello,
     GameList,
     ShowList,
+    RunRunJumpPunch,
+    Contact,
   }
 }
 </script>

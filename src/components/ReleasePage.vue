@@ -52,7 +52,7 @@
           </span>
           <span v-if="release.youtubeEmbed">
             <h1 class="text-2xl font-semibold"><i class="fab fa-youtube"></i> Video</h1>
-            <span v-html="release.youtubeEmbed"></span>
+            <div class="m-auto" v-html="release.youtubeEmbed"></div>
             <br /><br />
           </span>
           <span v-if="release.bandcampEmbed">
