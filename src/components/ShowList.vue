@@ -1,10 +1,10 @@
 <template>
-  <div class="flex ">
+  <div class="lg:flex">
     <div class="flex-1 overflow-y-auto shows">
       <Loader :loaded="loaded" />
       <Show :showData="show" v-for="show in shows" :key="show.date" />
     </div>
-    <div class="w-1/2">
+    <div class="lg:w-1/2 hidden lg:block">
       <Carousel timer="3000" :gallery="gallery()" />
     </div>
   </div>

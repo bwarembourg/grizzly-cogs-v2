@@ -1,6 +1,6 @@
 <template>
-  <div class="flex">
-    <div class="w-1/3 text-justify p-4">
+  <div class="lg:flex">
+    <div class="lg:w-1/2 lg:text-justify p-4">
       Hello ! I'm Grizzly Cogs. I make electronic and chiptune music, and original soundtrack for games since 2015. 
       Sometimes it is chill, sometimes it is catchy, sometimes it is melancholic, but it is always about feelings and nostalgia.
       <br /><br />
@@ -29,13 +29,20 @@
         <a href="https://www.chiptography.com" target="_blank">Chiptography</a>
       </div>
     </div>
-    <div>
+    <div class="py-4 bg-green-100 rounded lg:w-1/2">
+      <h2 class="text-2xl text-green-400 font-bold">Say hello, book me, hire me or whatever :</h2>
       <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
         <input type="hidden" name="form-name" value="contact" />
-        <input type="text" name="subject" />
-        <input type="mail" name="mail" />
-        <textarea name="body"></textarea>
-        <button type="submit">Send</button>
+        <div class="m-4">
+          <input type="text" name="subject" class="lg:w-96 w-64 h-8 rounded p-2" placeholder="Subject"/>
+        </div>
+        <div class="m-4">
+          <input type="mail" name="mail" class="lg:w-96 w-64 h-8 rounded p-2" placeholder="Your e-mail" />
+        </div>
+        <div class="m-4">
+          <textarea name="body" class="lg:w-96 w-64 h-36 rounded p-2" placeholder="Your message"></textarea>
+        </div>
+        <button type="submit" class="rounded-full bg-green-400 px-12 py-2 text-xl text-white font-bold">Send !</button>
       </form>
     </div>
   </div>

@@ -1,6 +1,6 @@
 <template>
   <Loader :loaded="loaded" />
-  <div class="grid sm:grid-cols-4 lg:grid-cols-8 mx-8 my-1">
+  <div class="grid grid-cols-3 lg:grid-cols-8 lg:mx-8 my-1">
     <Single  v-for="single in singles" :key="single.name" :singleData="single" />
   </div>
 </template>

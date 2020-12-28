@@ -1,10 +1,10 @@
 <template>
-    <div class="flex ">
-    <div class="w-1/3">
+    <div class="lg:flex ">
+    <div class="lg:w-1/3">
       <Carousel :gallery="gallery()" timer="3000" height="500px" />
     </div>
-    <div class="w-2/3 p-4">
-      <p class="text-justify text-lg">
+    <div class="lg:w-2/3 p-4">
+      <p class="lg:text-justify text-lg">
         <strong class="text-green-400">Run! Run! Jump! Punch!</strong> is a Chiptune / Punk rock band from Lille, France in which I play Synth, 
         and drum-programming.
         <br /><br />
@@ -15,7 +15,7 @@
       </p>
       <SubTitle name="RELEASES" />
       <Loader :loaded="loaded" />
-      <div class="grid sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6 mx-8 my-1">
+      <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 mx-8 my-1">
         <Album  v-for="album in albums" :key="album.name" :albumData="album"/>
       </div>
     </div>

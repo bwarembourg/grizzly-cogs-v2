@@ -1,5 +1,5 @@
 <template>
-  <div class="relative" v-bind:style="{ height: height || '800px'}" @mouseenter="hover = true" @mouseleave="hover = false">
+  <div class="relative h-auto" v-bind:style="{ height: height || '800px'}" @mouseenter="hover = true" @mouseleave="hover = false">
     <transition name="fade" v-for="image in gallery" :key="image.id">
       <img class="w-full h-full absolute object-cover" :src="image.src" v-show="id==image.id" />
     </transition>
@@ -13,7 +13,7 @@
         <i class="fas fa-arrow-right" v-on:click="next()" v-if="hover"></i>
       </transition>
     </div>
-    <span v-for="image in gallery" :key="image.id">
+    <span v-for="image in gallery" :key="image.id" class="hidden lg:inline">
       <i class="m-1 far fa-circle absolute bottom-0 text-white text-sm" v-if="id!=image.id" v-bind:style="{ left: getXPos(image.id) }"></i>
       <i class="m-1 fas fa-circle absolute bottom-0 text-white text-sm" v-if="id==image.id" v-bind:style="{ left: getXPos(image.id) }"></i>
     </span>
@@ -61,13 +61,13 @@ export default {
     },
     getXPos: function (id) {
       if (id == 0) {
-        return '47%';
+        return '45%';
       }
       if (id == 1) {
-        return '49%'
+        return '50%'
       }
       if (id == 2) {
-        return '51%'
+        return '55%'
       }
     }
   }

@@ -1,8 +1,10 @@
 <template>
+<div class="fadeInUp" v-wow data-wow-delay="0.2s" data-wow-duration="2s">
   <Loader :loaded="loaded" />
-  <div class="grid sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6 mx-8 my-1">
+  <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 lg:mx-8 my-1 ">
     <Game :game="game" v-for="game in games" :key="game.name" />
   </div>
+</div>
 </template>
 <script>
 import Loader from './Loader'
