@@ -64,10 +64,10 @@ export default {
         return '45%';
       }
       if (id == 1) {
-        return '50%'
+        return '49%'
       }
       if (id == 2) {
-        return '55%'
+        return '53%'
       }
     }
   }

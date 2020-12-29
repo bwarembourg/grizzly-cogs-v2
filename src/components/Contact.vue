@@ -24,9 +24,11 @@
         <br />
         <strong class="text-green-400">Web design and dev :</strong> Grizzly Cogs
         <br />
-        <strong class="text-green-400">Photographs</strong>
+        <strong class="text-green-400">Photographs :</strong>
         <a href="https://www.loisedoyen.com" target="_blank">Loïse Doyen</a> &
         <a href="https://www.chiptography.com" target="_blank">Chiptography</a>
+        <br />
+        <i>Website made with Netlify, FaunaDB, VueJS, tailwindcss.</i>
       </div>
     </div>
     <div class="py-4 bg-green-100 rounded lg:w-1/2">
