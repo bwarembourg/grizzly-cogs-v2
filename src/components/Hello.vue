@@ -1,17 +1,17 @@
 <template>
 <div id="hello" class="h-screen py-48 bg w-full">
-  <!-- <img src="../assets/cloud1.png" class="w-48 absolute bottom-16 left-20 floatting-reverse z-10 opacity-90 " />
-  <img src="../assets/cloud1.png" class="w-48 absolute top-1/2 left-5 floatting z-10 opacity-90" />
-  <img src="../assets/cloud1.png" class="w-48 absolute top-1/4 left-1/2 floatting-reverse z-10 opacity-90" />
-  <img src="../assets/cloud1.png" class="w-48 absolute top-1/6 left-48 floatting z-10 opacity-90" />
-  <img src="../assets/cloud1.png" class="w-48 absolute top-3/4 left-1/4 floatting-reverse z-10 opacity-90" />
-  <img src="../assets/cloud1.png" class="w-48 absolute top-3/4 left-1/4 floatting z-10 opacity-90" />
-  <img src="../assets/cloud1.png" class="w-48 absolute bottom-1/4 right-1/4 floatting-reverse z-10 opacity-90" />
-  <img src="../assets/cloud1.png" class="w-48 absolute bottom-2/4 right-48 floatting z-10 opacity-90" />
-  <img src="../assets/cloud1.png" class="w-48 absolute top-24 right-24 floatting-reverse z-10 opacity-90" />
-  <img src="../assets/cloud1.png" class="w-48 absolute bottom-36 right-16 floatting z-10 opacity-90" />
-  <img src="../assets/cloud1.png" class="w-48 absolute bottom-4 right-1/2 floatting-reverse z-10 opacity-90" />
-  <img src="../assets/cloud1.png" class="w-48 absolute top-4 left-1/4 floatting z-10 opacity-90" /> -->
+  <img src="../assets/cloud1.png" class="w-24 lg:w-48 absolute bottom-16 left-20 floatting-reverse z-10 opacity-90 " />
+  <img src="../assets/cloud2.png" class="w-24 lg:w-48 absolute top-1/2 left-5 floatting z-10 opacity-90" />
+  <img src="../assets/cloud3.png" class="hidden lg:block w-24 lg:w-48 absolute top-1/4 left-1/2 floatting-reverse z-10 opacity-90" />
+  <img src="../assets/cloud1.png" class="hidden lg:block w-24 lg:w-48 absolute top-1/6 left-48 floatting z-10 opacity-90" />
+  <img src="../assets/cloud2.png" class="hidden lg:block w-24 lg:w-48 absolute top-3/4 left-1/4 floatting-reverse z-10 opacity-90" />
+  <img src="../assets/cloud3.png" class="hidden lg:block w-24 lg:w-48 absolute top-3/4 left-1/4 floatting z-10 opacity-90" />
+  <img src="../assets/cloud1.png" class="w-24 lg:w-48 absolute bottom-1/4 right-1/4 floatting-reverse z-10 opacity-90" />
+  <img src="../assets/cloud2.png" class="hidden lg:block w-24 lg:w-48 absolute bottom-2/4 right-48 floatting z-10 opacity-90" />
+  <img src="../assets/cloud3.png" class="w-24 lg:w-48 absolute top-24 right-24 floatting-reverse z-10 opacity-90" />
+  <img src="../assets/cloud1.png" class="w-24 lg:w-48 absolute bottom-36 right-16 floatting z-10 opacity-90" />
+  <img src="../assets/cloud2.png" class="hidden lg:block  w-24 lg:w-48 absolute bottom-4 right-1/2 floatting-reverse z-10 opacity-90" />
+  <img src="../assets/cloud3.png" class=" w-24 lg:w-48 absolute top-4 left-1/4 floatting z-10 opacity-90" />
   <div class="w-6/12 absolute top-1/4 left-1/4 z-20">
     <img src="../assets/logo.png" class="w-full" />
     <p class="text-white lg:text-3xl text-md lg:mt-12 mt-1 lg:tracking-wider">Chiptune and electronic music composer</p>

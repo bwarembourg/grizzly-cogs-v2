@@ -1,14 +1,15 @@
 <template>
-  <div class="fixed top-0 left-0 w-full h-full z-40 bg-no-repeat bg-cover bg-green-400">
+  <Loader :loaded="loaded" />
+  <div class="fixed top-0 left-0 w-full h-full z-40 bg-no-repeat bg-cover bg-green-400" v-if="loaded">
     <!-- BG -->
-    <img class="w-full transform scale-150 bg" :src="'img/'+ game.cover" />
+    <img class="w-full transform scale-150 bg" :src="'/img/'+ game.cover" />
     <div class="fixed top-0 left-0 w-full h-full bg-black bg-opacity-60"></div>
 
     <div class="overflow-y-auto fixed top-0 h-full w-full">
       <!-- HEADER CONTENT -->
       <div class="lg:my-20 w-full lg:flex lg:flex-row justify-center">
         <div>
-          <img class="lg:w-64 w-full mr-8 shadow-lg" :src="'img/'+ game.cover">
+          <img class="lg:w-64 w-full mr-8 shadow-lg" :src="'/img/'+ game.cover">
         </div>
         <div class="lg:w-6/12 lg:text-left">
           <p>
@@ -50,7 +51,7 @@
       <div class="lg:mx-48 rounded-lg shadow flex flex-row opacity-90" v-bind:style="{ backgroundColor: game.backgroundColor || 'black', color: game.color || 'white'}">
         <div class="lg:mx-12 py-8 md:w-1/4 lg:w-1/6 hidden lg:block" v-if="game.galleryImages">
           <div class="m-2 w-full" v-for="image in game.galleryImages" :key="image">
-            <img :src="'img/' + game.galleryDir + '/' + image" />
+            <img :src="'/img/' + game.galleryDir + '/' + image" />
           </div>
         </div>
         <div class="flex-1 w-3/4 text-left py-8 px-4">
@@ -80,15 +81,38 @@
         </div>
       </div>
     </div>
-
-
-
+    <!-- CLOSE ICON -->
+    <div class="fixed lg:top-10 lg:right-16 top-4 right-4 cursor-pointer z-50">
+      <i v-on:click="goBack()" class="fas fa-times text-white lg:text-5xl text-xl"></i>
+    </div>
   </div>
 </template>
 <script>
+import axios from 'axios'
+import Loader from './Loader'
+import router from './../router'
+
 export default {
+  components: { Loader },
   name: 'gamePage',
-  props: [ 'game' ],
+  props: ["id"],
+  data: function() {
+    return { game: null, loaded: false }
+  },
+  mounted: function() {
+    axios
+      .get('/.netlify/functions/game?name=' + this.id)
+      .then(response => { 
+        console.log(response);
+        this.game = response.data
+        this.loaded = true
+    })
+  },
+  methods: {
+    goBack: function() {
+      router.go(-1)
+    }
+  }
 }
 </script>
 <style scoped>

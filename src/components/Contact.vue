@@ -17,6 +17,16 @@
         <a href="https://www.facebook.com/GrizzlyCogs/" target="_blank"><i class="fab fa-facebook text-green-400"></i></a>
         <br /><br />
       </div>
+      <h2 class="text-center text-yellow-800 tracking-wider font-bold">PRESS KITS :</h2>
+      <span class="text-green-400 font-bold">
+        <a href="https://drive.google.com/drive/folders/1EWHRfKFl4NDhwsy90erEs_gJPcdvcYVn?usp=sharing">
+          <i class="fas fa-folder"></i> Grizzly Cogs Press kit
+        </a>
+        <br />
+        <a href="https://drive.google.com/drive/folders/1scnuwHejPHDdmjZDNZOYeobVgqyr6fqK?usp=sharing">
+          <i class="fas fa-folder"></i> Run! Run! Jump! Punch! Press kit
+        </a>
+      </span>
       <h2 class="text-center text-yellow-800 tracking-wider font-bold">CREDITS :</h2>
       <div>
         <strong class="text-green-400">Logo, Clouds and colors :</strong> 
@@ -32,7 +42,7 @@
       </div>
     </div>
     <div class="py-4 bg-green-100 rounded lg:w-1/2">
-      <h2 class="text-2xl text-green-400 font-bold">Say hello, book me, hire me or whatever :</h2>
+      <h2 class="text-2xl text-green-400 font-bold">👋 Say hello, book me, hire me or whatever :</h2>
       <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
         <input type="hidden" name="form-name" value="contact" />
         <div class="m-4">

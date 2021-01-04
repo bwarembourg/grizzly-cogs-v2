@@ -16,7 +16,7 @@
       <SubTitle name="RELEASES" />
       <Loader :loaded="loaded" />
       <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 mx-8 my-1">
-        <Album  v-for="album in albums" :key="album.name" :albumData="album"/>
+        <Album  v-for="album in albums" :key="album.name" :albumData="album" :isRRJP="true"/>
       </div>
     </div>
 

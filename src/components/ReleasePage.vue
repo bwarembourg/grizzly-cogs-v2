@@ -1,14 +1,15 @@
 <template>
-  <div class="fixed top-0 left-0 w-full h-full z-40 bg-no-repeat bg-cover bg-green-400">
+  <Loader :loaded="loaded" />
+  <div class="fixed top-0 left-0 w-full h-full z-40 bg-no-repeat bg-cover bg-green-400" v-if="loaded">
     <!-- BG -->
-    <img class="w-full transform scale-150 bg" :src="'img/'+ release.artcover" />
+    <img class="w-full transform scale-150 bg" :src="'/img/'+ release.artcover" />
     <div class="fixed top-0 left-0 w-full h-full bg-black bg-opacity-60"></div>
 
     <div class="overflow-y-auto fixed top-0 h-full w-full">
     <!-- HEADER CONTENT -->
       <div class="lg:my-20 w-full lg:flex lg:flex-row my-4 justify-center">
         <div>
-          <img class="lg:mr-8 shadow-lg w-64 m-auto" :src="'img/'+ release.artcover">
+          <img class="lg:mr-8 shadow-lg w-64 m-auto" :src="'/img/'+ release.artcover">
         </div>
         <div class="lg:w-5/12 lg:text-left">
           <p>
@@ -74,11 +75,38 @@
       </div>
     </div>
   </div>
+
+  <!-- CLOSE ICON -->
+  <div class="fixed lg:top-10 lg:right-16 top-4 right-4 cursor-pointer z-50">
+    <i v-on:click="goBack()" class="fas fa-times text-white lg:text-5xl text-xl"></i>
+  </div>
 </template>
 <script>
+import axios from 'axios'
+import Loader from './Loader'
+import router from './../router'
+
 export default {
+  components: { Loader },
   name: 'ReleasePage',
-  props: ['release', 'type', ],
+  props: ['id', 'type', ],
+  data: function () {
+    return { loaded: false, release: null}
+  },
+  methods: {
+    goBack: function() {
+      router.go(-1)
+    }
+  },
+  mounted: function() {
+    axios
+      .get('/.netlify/functions/' + this.type + '?name=' + this.id)
+      .then(response => { 
+        console.log(response);
+        this.release = response.data
+        this.loaded = true
+    })
+  }
 }
 </script>
 <style scoped>
