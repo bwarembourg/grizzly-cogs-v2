@@ -11,7 +11,7 @@ const routes = [
     component: Home,
   },
   {
-    path: "/weekly-beats",
+    path: "/weeklybeats",
     name: "WeeklyBeats",
     component: WeeklyBeats
   },

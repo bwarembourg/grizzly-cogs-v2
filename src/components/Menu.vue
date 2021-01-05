@@ -10,7 +10,7 @@
       <MenuItem item-title="Shows" link="/#shows" :newtab="false" />
       <MenuItem item-title="Run! Run! Jump! Punch!" link="/#rrjp" :newtab="false" />
       <MenuItem item-title="Contact / About" link="/#contact" :newtab="false" />
-      <MenuItem item-title="Weekly Beats 2020-2021" link="weekly-beats" :newtab="false" :isRouterLink="true" />
+      <MenuItem item-title="Weekly Beats 2020-2021" link="weeklybeats" :newtab="false" :isRouterLink="true" />
       <MenuItem item-title="Merch" link="https://grizzlycogs.bandcamp.com/merch" :newtab="true" />
       <MiniMenuItem icon="fab fa-bandcamp" link="http://grizzlycogs.bandcamp.com" />
       <MiniMenuItem icon="fab fa-spotify" link="https://open.spotify.com/artist/6DYBO57C80qqR0VvCWLwCl?si=n13UY0f_T6OFQw-lRJm5Iw" />
@@ -38,7 +38,7 @@
     <a href="/http://grizzlycogs.bandcamp.com" class="text-green-400 text-2xl my-2" v-on:click="menuOpened=false">Listen</a><br />
     <a href="/#shows" class="text-green-400 text-2xl my-2" v-on:click="menuOpened=false">Shows</a><br />
     <a href="/#contact" class="text-green-400 text-2xl my-2" v-on:click="menuOpened=false">Contact / About</a><br />
-    <router-link to="weekly-beats" class="text-green-400 text-2xl my-2" v-on:click="menuOpened=false">Weekly Beats 2020-2021</router-link><br />
+    <router-link to="weeklybeats" class="text-green-400 text-2xl my-2" v-on:click="menuOpened=false">Weekly Beats 2020-2021</router-link><br />
     <a href="http://grizzlycogs.bandcamp.com/merch" class="text-green-400 text-2xl my-2" v-on:click="menuOpened=false">Merch</a><br />
     <a href="http://grizzlycogs.bandcamp.com" class="text-green-400 text-2xl my-2 mr-2"><i class="fab fa-bandcamp"></i></a>
     <a href="https://open.spotify.com/artist/6DYBO57C80qqR0VvCWLwCl?si=n13UY0f_T6OFQw-lRJm5Iw" class="text-green-400 text-2xl m-2"><i class="fab fa-spotify"></i></a>
